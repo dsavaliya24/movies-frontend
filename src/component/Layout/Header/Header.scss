@@ -1,0 +1,82 @@
+@import '../../../styles/mixins/global.scss';
+
+.header-section {
+    background: #191919;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    z-index: 99999;
+    position: sticky;
+    top: 0;
+
+    .header-alignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+        img{
+            cursor: pointer;
+        }
+        .header-logo-alignment {
+            cursor: pointer;
+            @include text-20;
+            color: #fff;
+        }
+
+        .header-option-alignment {
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+
+
+                .user-icon-alignment {
+                    width: 40px;
+                    height: 40px;
+                    background: #2BD17E;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    position: relative;
+
+                    .profile-dropdown-alignment {
+                        position: absolute;
+                        top: 50px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: #224957;
+                        border-radius: 16px;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                        &.open-dropdown {
+                            max-height: 100px;
+                            overflow-y: hidden;
+                            transition: 0.4s ease-in-out;
+
+                        }
+
+                        &.hidden-dropdown {
+                            max-height: 0px;
+                            overflow-y: hidden;
+                            transition: 0.4s ease-in-out;
+
+                        }
+
+                        p {
+                            padding: 16px;
+                            font-size: 14px;
+                            line-height: 21px;
+                            font-weight: 500;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

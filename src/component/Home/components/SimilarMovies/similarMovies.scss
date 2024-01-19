@@ -1,0 +1,101 @@
+@import "../../../../styles/mixins/global.scss";
+
+.similar-movie-details-all-alignment {
+    padding: 0 0 40px 0;
+
+    h4 {
+        @include text-lg-bolder;
+        color: #fff;
+        padding: 20px 25px;
+
+
+    }
+
+    .similar-movie-details-alignment {
+        padding: 0 20px;
+
+        .similar-movie-details-slider {
+            padding: 0 8px;
+            cursor: pointer;
+
+            .similar-slider-movie-details {
+                .similar-movie-img-alignment {
+                    width: 100%;
+                    height: 285px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        border-radius: 8px;
+                        object-fit: cover
+                    }
+
+                }
+
+
+                h6 {
+                    @include text-lg-bold;
+                    color: #cecfd1;
+                    padding: 8px 8px 0 8px;
+                }
+
+            }
+
+
+        }
+    }
+}
+
+
+.slider-prev-arrow {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: 2px solid rgba(78, 75, 75, 0.6);
+    background: #131313;
+    border-radius: 50%;
+    z-index: 9999;
+    left: -6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+        background: rgba(78, 75, 75);
+        transition: 0.4s ease-in-out;
+    }
+}
+
+.slider-next-arrow {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: 2px solid rgba(78, 75, 75, 0.6);
+    background: #131313;
+    border-radius: 50%;
+    z-index: 9999;
+    right: -6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+        background: rgba(78, 75, 75);
+        transition: 0.4s ease-in-out;
+    }
+}

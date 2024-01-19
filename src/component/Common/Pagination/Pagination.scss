@@ -1,0 +1,86 @@
+@import '../../../styles/mixins/global.scss';
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: center;
+  padding: 40px 0 0 0;
+
+  button {
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    border: 2px solid #4e4b4b99;
+    background: #131313;
+    transition: 0.2s ease-in-out;
+    @include text-md2;
+
+    @include breakpoint("max-sm") {
+      width: 30px;
+      height: 30px;
+      @include text-sm;
+    }
+
+    &:hover {
+      background: #4e4b4b99;
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  .current {
+    font-weight: 600;
+    color: #fff;
+    background: #2BD17E;
+    border: none;
+    @include text-lg;
+
+    @include breakpoint("max-sm") {
+      @include text-md;
+    }
+
+    &:hover {
+      background: #2BD17E;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+
+.prev,
+.prev1,
+.next1,
+.next {
+  font-size: 0;
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.prev {
+  svg {
+    transform: rotate(90deg);
+  }
+}
+
+.next {
+  svg {
+    transform: rotate(-90deg);
+  }
+}
+
+.next1 {
+  svg {
+    transform: rotate(-180deg);
+  }
+}

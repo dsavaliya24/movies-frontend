@@ -1,0 +1,42 @@
+@import "../../../../styles/mixins/global.scss";
+
+.no-search-data-section {
+    width: 100%;
+    height: calc(100vh - 360px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    .no-search-icon-alignment {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+
+        @include breakpoint("max-sm") {
+            width: 100px;
+            height: 100px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    h6 {
+        padding: 20px 0 0 0;
+        @include text-20-bold;
+        color: #fff;
+        text-align: center
+    }
+
+    p {
+        @include text-lg;
+        color: #cecfd1;
+        text-align: center;
+    }
+
+}

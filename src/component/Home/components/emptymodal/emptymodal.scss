@@ -1,0 +1,64 @@
+@import "../../../../styles/mixins/index.scss";
+
+.empty-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999;
+  background-color: rgb(0, 0, 0, 0.5);
+
+  .modal-md {
+    width: 400px;
+
+    background: #093545;
+    border-radius: 6px;
+
+    .button-alignment {
+      padding: 0 20px 40px 20px;
+      display: flex;
+      justify-content: center;
+
+      button {
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        padding: 10px 28px;
+        border-radius: 10px;
+        background:  #2bd17e;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 24px; 
+      }
+    }
+
+    .modal-body {
+      padding: 80px 20px;
+      h4 {
+        color: #fff;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 56px; /* 116.667% */
+      }
+    }
+
+    .close-icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 20px;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}
