@@ -1,4 +1,3 @@
-import { API_KEY } from "../../../config";
 import api from "../../../utils/api";
 import { convertObjectToFormData } from "../../../utils/helpers";
 
@@ -7,13 +6,6 @@ export const getMovieData = (data) => {
   const apiSearch = search ? `&search=${search}` : "";
   return api.get(`movies/?limit=${limit}&page=${page}${apiSearch}`);
 };
-
-export const getTopMovie = () => api.get(`movies/`);
-
-export const getSerchedMovie = (body) =>
-  api.get(
-    `search/movie?api_key=${API_KEY}&query=${body?.title}&page=${body?.page} `
-  );
 
 export const getMovieDetailsByID = (body) => api.get(`/movies/?_id=${body.id}`);
 

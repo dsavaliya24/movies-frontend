@@ -1,11 +1,6 @@
-export const BASE_URL = "https://c6d0-2405-201-200d-1c68-714c-de7d-648e-4d5b.ngrok-free.app/api/v1/"/* "https://api.themoviedb.org/3" */;
-
-export const API_KEY = "fbb88a18fd7cddff9c919fd7e582625b";
+export const BASE_URL = "https://api.movies.rejoicehub.com/api/v1/"/* "https://api.themoviedb.org/3" */;
 
 export const IMAGE_URL = "https://image.tmdb.org/t/p/w500";
-
-export const API_TOKEN =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYmI4OGExOGZkN2NkZGZmOWM5MTlmZDdlNTgyNjI1YiIsInN1YiI6IjY0OWFjMmYzZmVkNTk3MDEyY2ViZDNmOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.c35lTbUs-PNO-0r7OXBvaAEIq_znZqudTaR3d-c9ECw";
 
 export const genreNames = [
   {

@@ -4,13 +4,10 @@ import MovieDetailsModal from "./components/MovieDetailsModal";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getPopularMovieData,
-  getSerchedMovieData,
-  getTopMovieData,
 } from "./redux/reducer";
 import { useHistory } from "react-router-dom";
 import { getToken, urlSearchParams } from "../../utils";
 import { toast } from "react-hot-toast";
-import { genreNames } from "../../config";
 import MovieList from "./components/MovieList";
 import EmptyModal from "./components/emptymodal";
 

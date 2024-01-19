@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import RequestStates from "../../../utils/request-states";
 
-import { addMovie, getGenreDatas, getMovieData, getMovieDetailsByID, getSerchedMovie, getSimilarMovieByID, getTopMovie, login, signup, updateMovieDetailsByID } from "./action";
+import { addMovie, getMovieData, getMovieDetailsByID, getSimilarMovieByID, login, signup, updateMovieDetailsByID } from "./action";
 
 const initialState = {
   movieRequestState: RequestStates.init,
@@ -14,17 +14,6 @@ const initialState = {
 
 export const getPopularMovieData = createAsyncThunk("movie/getPopularMovieData", async (data) => {
   const res = await getMovieData(data);
-  return res.data;
-});
-
-
-export const getTopMovieData = createAsyncThunk("movie/getTopMovieData", async () => {
-  const res = await getTopMovie();
-  return res.data;
-});
-
-export const getSerchedMovieData = createAsyncThunk("movie/getSerchedMovieData", async (body) => {
-  const res = await getSerchedMovie(body);
   return res.data;
 });
 
@@ -88,30 +77,6 @@ const movieSlice = createSlice({
       movieRequestState: RequestStates.loading,
     }),
     [getPopularMovieData.rejected]: (state) => ({
-      ...state,
-      movieRequestState: RequestStates.error,
-    }),
-    [getTopMovieData.fulfilled]: (state, action) => ({
-      ...state,
-      movieRequestState: RequestStates.success,
-    }),
-    [getTopMovieData.pending]: (state) => ({
-      ...state,
-      movieRequestState: RequestStates.loading,
-    }),
-    [getTopMovieData.rejected]: (state) => ({
-      ...state,
-      movieRequestState: RequestStates.error,
-    }),
-    [getSerchedMovieData.fulfilled]: (state, action) => ({
-      ...state,
-      movieRequestState: RequestStates.success,
-    }),
-    [getSerchedMovieData.pending]: (state) => ({
-      ...state,
-      movieRequestState: RequestStates.loading,
-    }),
-    [getSerchedMovieData.rejected]: (state) => ({
       ...state,
       movieRequestState: RequestStates.error,
     }),
