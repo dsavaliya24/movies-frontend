@@ -17,7 +17,8 @@ Welcome to Movie Tracker, a React 17.0.2 application that allows users to sign u
  
 4. Edit Movie:
     Update information about a movie, including modifying its name, description, rating, release year, and genre.
-
+5. Search Movie:
+    Easily find specific movies using the search their name.
 ## Prerequisites
 
 - Node.js (version 16.17.0)
@@ -45,16 +46,5 @@ To run the Movie Tracker app locally, follow these steps:
 3. npm start
    Open your web browser and navigate to http://localhost:3000 to access the Movie Tracker app.
 
-## Usage
-  Sign Up / Log In:
-  Create a new account or log in if you already have one.
-  
-  Add Movie:
-  Click on the "Add Movie" option and fill in the details for the new movie.
-  
-  View Movie List:
-  Browse the list of movies you have added with their details.
-  
-  Edit Movie:
-  Select a movie from the list and choose the "Edit" option to modify its details.
+
   
