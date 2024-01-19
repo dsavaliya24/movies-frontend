@@ -1,23 +1,22 @@
 
-## Movie Tracker App
+# Movie Tracker App
 
 # Introduction
 Welcome to Movie Tracker, a React 17.0.2 application that allows users to sign up, log in, and manage their movie collection. Users can add, edit, and view details about movies, including names, descriptions, ratings, release years, and genres.
 
-## Features
+# Features
 
-# User Authentication:
+1. User Authentication:
+    Sign up and log in securely to access the movie management features.
 
-1. Sign up and log in securely to access the movie management features.
 2. Add Movie:
-
-3. Add new movies to your collection by providing details such as name, description, rating, release year, and genre.
-4. View Movie List:
-
-5. Browse the list of movies you have added, including their details.
-6. Edit Movie:
-
-7. Update information about a movie, including modifying its name, description, rating, release year, and genre.
+    Add new movies to your collection by providing details such as name, description, rating, release year, and 
+    genre.
+3. View Movie List:
+    Browse the list of movies you have added, including their details.
+ 
+4. Edit Movie:
+    Update information about a movie, including modifying its name, description, rating, release year, and genre.
 
 ## Prerequisites
 
